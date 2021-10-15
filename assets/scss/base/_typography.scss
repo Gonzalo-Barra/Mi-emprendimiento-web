@@ -1,0 +1,63 @@
+.main {
+    .cursos {
+      .curso {
+       
+     
+  
+          &__titulo {
+            font-family: $ubuntu;
+            font-size: $medium;
+         
+          }
+  
+          &__parrafo {
+            font-family: $ubuntu;
+            font-size: $small;
+            font-weight: $regular;
+            line-height: 2;
+          }
+  
+          &__instructor {
+            font-family: $ubuntu;
+            font-size: $medium;
+            font-weight: $bold;
+
+          }
+
+        }
+      }
+    
+    .cursos2020 {
+
+
+  
+      &__titulo {
+        font-family: $ubuntu;
+        font-weight: $bold;
+        font-size: $medium;
+        text-transform: uppercase;
+        text-align: center;
+      }
+  
+      &__redes {
+        display: flex;
+        justify-content: center;
+
+      }
+  
+      &__parrafo {
+        font-family: $ubuntu;
+        font-size: $small;
+        font-weight: $regular;
+        line-height: 2;
+
+      }
+  
+      &__svg {
+        text-align: center;
+      }
+  
+    }
+}
+  
+  

@@ -1,0 +1,134 @@
+.main {
+
+  .cursos {
+    width: 98%;
+    margin: 0 auto;
+    border: 0.0625rem solid $black;
+    padding: 0.1875rem;
+    
+    &__articulo {
+      border: 0.0313rem dotted lightslategray;
+      margin: 1.25rem 0.9375rem;
+      padding: 0.3125rem;
+    }
+
+    &__imagen {
+      img {
+        width: 100%;
+        padding: 0.3125rem;
+      }
+
+      &__titulo {
+        padding: 0.3125rem;
+      }
+
+      &__parrafo {
+        padding: 0.3125rem;
+      }
+
+      &__instructor {
+        padding: 0.3125rem;
+      }
+
+      &__lista {
+        padding: 0.3125rem;
+      }
+
+      &__iconos {
+        display: inline-block;
+        margin: 0.1875rem;
+      }
+
+      &__iconos i {
+        margin: 0.25rem;
+      }
+    }
+  }
+  .cursos2020 {
+    width: 98%;
+    margin: 0 auto;
+    border: 0.0625rem solid $black;
+    padding: 0.1875rem;
+
+    &__imagen {
+      padding: 1.25rem 0;
+      img {
+        display: block;
+        margin: 0 auto;
+        background-image: url("../img/web-development.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+        width: 11.25rem;
+        height: 11.25rem;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+    }
+
+    &__redes {
+      display: flex;
+      justify-content: center;
+      margin: 0.625rem;
+    }
+
+    &__icono {
+      display: inline-block;
+    }
+    &__icono i {
+      font-size: $large !important;
+      margin: 0 8px;
+    }
+
+    &__parrafo {
+      padding: 10px;
+    }
+
+    &__lista {
+      display: flex;
+      flex-direction: column;
+    }
+    &__cursos {
+      font-family: $ubuntu;
+      list-style: circle;
+      margin: 3px 0 3px 30px;
+    }
+    &__cursos a {
+      text-decoration: none;
+    }
+
+    &__svg {
+      text-align: center;
+    }
+
+    &__path1 {
+      animation-name: lineal;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    &__path2 {
+      animation-name: rueda;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      transform-origin: 80% 80%;
+    }
+  }
+}
+
+@include respond-to($bp-sm) {
+  .main {
+    display: flex;
+
+    .cursos {
+      width: 50%;
+      margin: 0.125rem 0.375rem;
+    }
+    .cursos2020 {
+      width: 50%;
+      margin: 0.125rem 0.375rem;
+    }
+  }
+}
